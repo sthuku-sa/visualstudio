@@ -18,7 +18,9 @@ namespace DevOps.Pages
 
         private readonly ILogger<ErrorModel> _logger;
 
+#pragma warning disable CS8618 // Non-nullable property 'RequestId' is uninitialized. Consider declaring the property as nullable.
         public ErrorModel(ILogger<ErrorModel> logger)
+#pragma warning restore CS8618 // Non-nullable property 'RequestId' is uninitialized. Consider declaring the property as nullable.
         {
             _logger = logger;
         }
